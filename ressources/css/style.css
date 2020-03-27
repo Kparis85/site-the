@@ -1,0 +1,410 @@
+/* DOCUMENT INFORMATION
+    - Documetn: thé thème
+    - Version : 1.0.0
+    - Author : Kevin
+*/
+
+
+/* Colors
+    - Defaut body text #eee
+    - h1 
+    - h2
+    - h3
+
+    - button
+    - button:hover
+
+-   Icone   blue
+
+    - border
+*/
+
+
+/* FONTS
+    - Defaut        Lato
+    - Subtitle
+*/
+
+
+/* CSS DIRECTORY
+1. =GLOBAL
+2. =HEADER
+3. =PRODUITS
+*/
+
+
+/* GLOBAL
+=========================================================*/
+
+html {
+    background-color: #fff;
+}
+
+h1,h2,h3,h4 {
+    font-family: "lato","arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    word-spacing: 8px;    
+    
+}
+
+h1 {
+    color: #eee;
+}
+
+h2 {
+    color: #075700;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+h3 {
+    color: #00c125;
+    font-size: 160%;
+}
+
+p {
+    font-size: 70%;
+    font-weight: 400;
+    line-height: 24px;
+    
+}
+
+section {
+    padding: 10px 0px 10px 0px;
+}
+
+
+/* HEADER
+=========================================================*/
+
+header {
+    background-image: linear-gradient(rgba(0,242,96,0.4),rgba(7,117,230,0.6)),url(../images/header.jpg);
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-title {
+    position: absolute;
+    top: 10%;
+}
+
+.home-title h1 {
+    font-size: 340%;
+    color: #fff;
+}
+
+.home-title h1 span {
+    font-weight: 700;
+}
+
+
+.home-title p {
+    color: white
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn-full {
+    background-color: azure;
+    color: #881313;
+    font-weight: 1000;
+    margin-right: 10px
+}
+
+.btn-ghost {
+    border: 1px solid #fff;
+    color: #881313;
+    font-weight: 1000
+}
+
+.btn-full:hover {
+    background-color: aqua;
+    color: #fff;
+}
+
+.btn-ghost:hover {
+    background-color: aqua;
+    border: 1px solid aqua;
+    color: #fff;
+}
+
+/* PRODUITS
+=========================================================*/
+
+.produits-plus {
+    margin: 20px 0px;
+}
+
+.produits-plus:hover .produits-icon {
+    color: firebrick;
+    transform: translateX(10px);
+}
+
+.produits-img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.produits-icon {
+    font-size: 30px;
+    color: #00c125;
+    margin-top: -6px;
+    transition: all 1s;
+}
+
+/* FAMILLES THES
+=========================================================*/
+
+.famille-the {
+    background-color: #cdf6e1;
+}
+
+.famille-details {
+    background-color: #eee;
+    padding: 20px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 10px
+}
+
+.famille-details img {
+    display:block;
+    margin: 0 auto;
+    width: 80%;    
+}
+
+.famille-details h4 {
+    text-align: center;
+}
+
+
+/* GALERIES PHOTOS
+=========================================================*/
+
+.galeries-img {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 10px;
+}
+
+.galeries-titres {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.galeries-titres h4 {
+    color: #3b3b3b;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/* AVIS CLIENTS
+=========================================================*/
+
+.clients {
+    background-image: linear-gradient(rgba(0,242,96,0.3),rgba(7,117,230,0.3)), url(../images/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients h2 {
+    color : white;
+}
+
+.clients h2:after {
+    background-color: red;
+}
+
+blockquote {
+    padding: 20px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 130%;
+    color : #fffcfc;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 600%;
+    font-family: sanchez;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(255,50,100,1)
+}
+
+cite {
+    font-size:  90%;
+    display:  block;
+    margin-top: 5px;
+}
+
+
+cite img {
+    height: : 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* PACKS
+=========================================================*/
+
+.pack {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.pack h3 {
+    color:green;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size:  200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left:2px;
+}
+
+.pack-prenium {
+    background-color: rgba(34, 139, 34, 0.53)
+}
+
+.pack-title {
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid #454444;
+}
+
+.pack-tittle-prenium {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.47);
+    border-radius: 5px;
+    color: red;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+}
+
+.pack-signup:hover .btn-pack {
+    transform: translateY(-20px);
+    background-color: cornflowerblue;
+    color: brown;
+    transition: all 1s;
+}
+
+.btn-pack {
+    background-color: coral;
+    color:  #fff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+
+/* FORMULAIRE DE CONTACT
+=========================================================*/
+
+.contact-form {
+    margin-bottom: 20px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-contact {
+    background-color: azure;
+    color: #881313;
+    font-weight: 1000;
+    margin-right: 10px
+}
+
+.map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER
+=========================================================*/
+
+footer {
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 20px 20px;
+}
+
+.copyright {
+    text-align: center
+}
+
+.copyright a {
+    color: #fff;
+}
+
+
